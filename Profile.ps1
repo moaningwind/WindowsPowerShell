@@ -1,4 +1,5 @@
 Set-Alias g git
+Set-Alias pn pnpm
 
 # To be compatible with @antfu/ni
 Remove-Item Alias:ni -Force -ErrorAction Ignore
