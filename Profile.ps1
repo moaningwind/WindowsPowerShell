@@ -48,8 +48,8 @@ function t { nr test }
 function tu { nr test -u }
 function lint { nr lint }
 function lintfix { nr lint --fix }
-function gpl { git pull }
-function gp { git push }
+function gpl { g pull }
+function gp { g push }
 function i { Set-Location D:\wind }
 function wind { Set-Location D:\wind }
 function gh { Set-Location D:\github }
