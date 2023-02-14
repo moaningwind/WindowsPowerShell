@@ -1,5 +1,6 @@
 Set-Alias g git
 Set-Alias pn pnpm
+Set-Alias i wind
 
 # To be compatible with @antfu/ni
 Remove-Item Alias:ni -Force -ErrorAction Ignore
@@ -50,12 +51,9 @@ function lint { nr lint }
 function lintfix { nr lint --fix }
 function gpl { g pull }
 function gp { g push }
-function i { Set-Location D:\wind }
 function wind { Set-Location D:\wind }
 function gh { Set-Location D:\github }
 function pns { Set-Location D:\pns }
-function npmrc { echo 'shamefully-hoist=true' >> .npmrc }
 
 # Set gitconfig
 function closeautocrlf { git config --global core.autocrlf false }
-
