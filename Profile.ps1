@@ -1,5 +1,5 @@
 Set-Alias g git
-Set-Alias pn pnpm
+Set-Alias p pnpm
 Set-Alias i wind
 
 # To be compatible with @antfu/ni
@@ -36,9 +36,6 @@ function powershellsetup {
   scoop install psreadline
   # Auto jump
   scoop install zlocation
-  # A PowerShell environment for Git
-  scoop install posh-git
-  Add-PoshGitToProfile
 }
 
 function nio { ni --prefer-offline }
@@ -51,6 +48,7 @@ function lint { nr lint }
 function lintfix { nr lint --fix }
 function gpl { g pull }
 function gp { g push }
+function gb { g branch }
 function wind { Set-Location D:\wind }
 function gh { Set-Location D:\github }
 function pns { Set-Location D:\pns }
